@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("snap8-theme");if(_t==="light"||_t==="dark")docu
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#5eead4; --sky-deep:#0f766e;
-  --teal:#0f766e; --teal-deep:#042f2e;
-  --org:#489592; --org-deep:#042f2e;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#5eead4;
+  --sky:#f472b6; --sky-deep:#e41280;
+  --teal:#38bdf8; --teal-deep:#0782b9;
+  --org:#f472b6; --org-deep:#e41280;
+  --amber:#38bdf8; --rose:#f472b6; --cyan:#f472b6;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#5eead4 5%,#0f766e 50%,#489592 95%);
+  --grad:linear-gradient(100deg,#ea5ea7 5%,#0f5676 50%,#954870 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(4, 47, 46,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(4, 47, 46,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(15, 118, 110,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(94, 234, 212,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(4,34,47,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(4,34,47,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(15,86,118,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(234,94,167,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(4, 47, 46,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(4, 47, 46,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(15, 118, 110,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(4,34,47,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(4,34,47,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(15,86,118,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#b2bdd4; --bg1:#b5c2dd;
   --ink:#000000; --muted:#4d5871; --faint:#707a93;
-  --sky:#0f766e; --sky-deep:#042f2e;
-  --teal:#042f2e; --teal-deep:#042f2e;
-  --org:#0f766e; --org-deep:#042f2e;
-  --amber:#b45309; --rose:#e11d48; --cyan:#042f2e;
+  --sky:#f40c85; --sky-deep:#8a064b;
+  --teal:#058ac5; --teal-deep:#023d58;
+  --org:#f40c85; --org-deep:#8a064b;
+  --amber:#f40c85; --rose:#058ac5; --cyan:#058ac5;
   --card:#f8fafc; --card2:#b0bfda;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#0f766e,#042f2e,#0f766e);
+  --grad:linear-gradient(100deg,#760f45,#04222f,#760f45);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -84,7 +84,7 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"] #dots{opacity:.55}
 [data-theme="light"] .bg-grad{opacity:.55}
 nav.chapters{position:sticky;top:0;z-index:50;background:rgba(6,7,13,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav.chapters .rail{max-width:1080px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
+nav.chapters .rail{max-width:1280px;margin:0 auto;padding:.65rem 1rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-right:3.8rem}
 nav.chapters .rail::-webkit-scrollbar{display:none}
 nav.chapters a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:.82rem;font-weight:600;
   letter-spacing:.04em;padding:.42rem .8rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:all .25s ease}
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,13 +129,13 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .hero-disc{display:inline-block;margin:0 auto 1.1rem;padding:.5rem 1.05rem;border:1px solid var(--line);border-radius:999px;font-size:.8rem;color:var(--muted);background:rgba(255,255,255,.03)}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(38,184,249,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(38,184,249,.55)}70%{box-shadow:0 0 0 12px rgba(38,184,249,0)}100%{box-shadow:0 0 0 0 rgba(38,184,249,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,12 +187,12 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .kv .k{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(42, 152, 255,.12);color:var(--sky);border:1px solid rgba(42, 152, 255,.35)}
-.kv .k.t{background:rgba(40, 217, 196,.10);color:var(--teal);border:1px solid rgba(40, 217, 196,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(94, 234, 212,.12);color:var(--rose);border:1px solid rgba(94, 234, 212,.35)}
+.kv .k.t{background:rgba(217,40,133,.10);color:var(--teal);border:1px solid rgba(217,40,133,.35)}
+.kv .k.o{background:rgba(61,192,250,.12);color:var(--org);border:1px solid rgba(61,192,250,.35)}
+.kv .k.a{background:rgba(38,184,249,.12);color:var(--amber);border:1px solid rgba(38,184,249,.35)}
+.kv .k.g{background:rgba(234,94,167,.12);color:var(--rose);border:1px solid rgba(234,94,167,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(4, 47, 46,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(4,34,47,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -209,14 +209,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(38,184,249,.4);background:rgba(38,184,249,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -227,12 +227,21 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
+/* --- layman example tiles: theme-teal pulse dot (distinct from amber anecdote dots) --- */
+.xtile{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem 1.25rem;margin:1.2rem 0;font-size:.94rem;line-height:1.65;color:var(--muted)}
+.xtile strong{color:var(--ink)}
+.xtile .xlead{font-weight:800;color:var(--sky)}
+.xdot{position:absolute;top:-7px;left:24px;width:13px;height:13px;border-radius:50%;background:var(--sky)}
+.xdot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--sky);animation:xdotPulse 2.2s ease-out infinite}
+@keyframes xdotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.25);opacity:0}}
+@media (prefers-reduced-motion:reduce){.xdot::after{animation:none;opacity:.35;transform:scale(.8)}}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(38,184,249,.06);border:1px solid rgba(38,184,249,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -243,9 +252,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(94, 234, 212,.1);color:var(--rose);border:1px solid rgba(94, 234, 212,.4)}
+.lvl-known .level{background:rgba(38,184,249,.1);color:var(--amber);border:1px solid rgba(38,184,249,.4)}
+.lvl-theory .level{background:rgba(61,192,250,.1);color:var(--org);border:1px solid rgba(61,192,250,.4)}
+.lvl-unknown .level{background:rgba(234,94,167,.1);color:var(--rose);border:1px solid rgba(234,94,167,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -266,10 +275,10 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
+
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -282,7 +291,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(94, 234, 212,.05);border:1px solid rgba(94, 234, 212,.3);border-radius:var(--radius);
+.limits{background:rgba(234,94,167,.05);border:1px solid rgba(234,94,167,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -349,7 +358,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #5eead4), var(--mpc2, #0f766e)) border-box;
+    linear-gradient(135deg, var(--mpc1, #ea5ea7), var(--mpc2, #0f5676)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -361,11 +370,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #26b8f9); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #5eead4);
-  box-shadow: 0 0 10px var(--mpc1, #5eead4);
+  background: var(--mpc1, #ea5ea7);
+  box-shadow: 0 0 10px var(--mpc1, #ea5ea7);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -399,7 +408,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #5eead4), var(--acc2, #0f766e), var(--acc3, #489592));
+  background: linear-gradient(100deg, var(--acc1, #ea5ea7), var(--acc2, #0f5676), var(--acc3, #954870));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -420,23 +429,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #26b8f9); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #26b8f9); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #26b8f9); background: rgba(38,184,249,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #5eead4), var(--acc2, #0f766e));
+  background: linear-gradient(100deg, var(--acc1, #ea5ea7), var(--acc2, #0f5676));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #26b8f9;
+  border: 1px dashed rgba(38,184,249,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -444,17 +453,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #26b8f9); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #5eead4), var(--acc2, #0f766e), var(--acc3, #489592));
+  background: linear-gradient(90deg, var(--acc1, #ea5ea7), var(--acc2, #0f5676), var(--acc3, #954870));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(38,184,249,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -478,13 +487,42 @@ mini-poll { display: block; }
   .mpoll-q { font-size: 1.02rem; }
 }
 
+
+/* --- snap8 enhancement: nmj/snare animations --- */
+.contract{transform-box:fill-box;transform-origin:center;animation:contract 2.4s ease-in-out infinite}
+@keyframes contract{0%,100%{transform:scaleX(1)}14%{transform:scaleX(.93)}30%{transform:scaleX(1)}}
+.contract-soft{transform-box:fill-box;transform-origin:center;animation:contractSoft 3.2s ease-in-out infinite}
+@keyframes contractSoft{0%,100%{transform:scaleX(1)}16%{transform:scaleX(.975)}34%{transform:scaleX(1)}}
+.vespop{transform-box:fill-box;transform-origin:center;animation:vespop 2.4s ease-in-out infinite}
+@keyframes vespop{0%,100%{transform:scale(1);opacity:.85}10%{transform:scale(1.35);opacity:1}26%{transform:scale(1);opacity:.85}}
+.snarezip{stroke-dasharray:5 5;animation:dashmove 1.4s linear infinite}
+.seqA{animation:seqGlow 4.8s ease-in-out infinite}
+.seqB{animation:seqGlow 4.8s ease-in-out 1.6s infinite}
+.seqC{animation:seqGlow 4.8s ease-in-out 3.2s infinite}
+.bead8{transform-box:fill-box;transform-origin:center;animation:beadFloat 3.6s ease-in-out infinite}
+@keyframes beadFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.ratehead{margin:2.2rem 0 .6rem;font-size:1.35rem;color:var(--ink);text-align:center}
+
+/* ===== worker4b: potential-benefits + who-it-may-suit chapters ===== */
+.tierband{display:flex;align-items:center;gap:.7rem;margin:2rem 0 .55rem;flex-wrap:wrap}
+.tbadge{display:inline-flex;align-items:center;gap:.45rem;font-size:.76rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:.45rem .95rem;border-radius:999px;white-space:nowrap}
+.tb-est{background:linear-gradient(90deg,var(--sky),var(--teal));color:#0a0c14}
+.tb-emg{background:rgba(255,255,255,.04);border:2px dashed var(--sky);color:var(--sky)}
+.tb-com{background:rgba(38,184,249,.10);border:2px solid var(--amber);color:var(--amber)}
+.tiernote{margin:0 0 1.1rem;color:var(--muted);font-size:.92rem;line-height:1.6}
+.tiernote strong{color:var(--ink)}
+.fitlist{margin:.6rem 0 0;padding-left:1.15rem;color:var(--muted);font-size:.95rem;line-height:1.7}
+.fitlist li{margin:.5rem 0}
+.fitlist strong{color:var(--ink)}
+[data-theme="light"] .tb-est{color:#ffffff}
+
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5eead4"/><stop offset="50%" stop-color="#0f766e"/><stop offset="100%" stop-color="#489592"/>
+      <stop offset="0%" stop-color="#ea5ea7"/><stop offset="50%" stop-color="#0f5676"/><stop offset="100%" stop-color="#954870"/>
     </linearGradient>
   </defs>
 </svg>
@@ -510,17 +548,19 @@ mini-poll { display: block; }
   <a href="#ch3"><span class="n">03</span>How It Might Work</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
   <a href="#ch5"><span class="n">05</span>Snap-8 vs Botox</a>
-  <a href="#ch6"><span class="n">06</span>What People Say</a>
-  <a href="#ch7"><span class="n">07</span>Risks &amp; Unknowns</a>
-  <a href="#ch8"><span class="n">08</span>Glossary</a>
-  <a href="#ch9"><span class="n">09</span>Takeaways</a>
+  <a href="#ch6"><span class="n">06</span>Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Who It May Suit</a>
+  <a href="#ch8"><span class="n">08</span>Community Reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks &amp; Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
   <a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Story</a><a href="#ch3">03 · Mechanism</a>
-  <a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs Botox</a><a href="#ch6">06 · Reports</a><a href="#ch7">07 · Risks</a>
-  <a href="#ch8">08 · Glossary</a><a href="#ch9">09 · Takeaways</a>
+  <a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs Botox</a><a href="#ch6">06 · Benefits</a><a href="#ch7">07 · Fit</a><a href="#ch8">08 · Community</a><a href="#ch9">09 · Risks</a>
+  <a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -552,26 +592,27 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 240" role="img" aria-label="Eight amino acid beads of Snap-8 next to the SNAP-25 protein it is modeled on">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">SNAP-8 · ACETYL OCTAPEPTIDE-3 · 8 AMINO ACIDS</text>
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <circle cx="90" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="90" y="115" fill="#5eead4">1</text>
-        <circle cx="150" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="150" y="115" fill="#5eead4">2</text>
-        <circle cx="210" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="210" y="115" fill="#5eead4">3</text>
-        <circle cx="270" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="270" y="115" fill="#5eead4">4</text>
-        <circle cx="330" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="330" y="115" fill="#5eead4">5</text>
-        <circle cx="390" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="390" y="115" fill="#5eead4">6</text>
-        <circle cx="450" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="450" y="115" fill="#5eead4">7</text>
-        <circle cx="510" cy="110" r="24" fill="#151b36" stroke="#5eead4" stroke-width="2.5"/><text x="510" y="115" fill="#5eead4">8</text>
+        <circle cx="90" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="90" y="115" fill="#ea5ea7">1</text>
+        <circle cx="150" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="150" y="115" fill="#ea5ea7">2</text>
+        <circle cx="210" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="210" y="115" fill="#ea5ea7">3</text>
+        <circle cx="270" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="270" y="115" fill="#ea5ea7">4</text>
+        <circle cx="330" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="330" y="115" fill="#ea5ea7">5</text>
+        <circle cx="390" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="390" y="115" fill="#ea5ea7">6</text>
+        <circle cx="450" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="450" y="115" fill="#ea5ea7">7</text>
+        <circle cx="510" cy="110" r="24" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5"/><text x="510" y="115" fill="#ea5ea7">8</text>
       </g>
       <g stroke="#7f88a5" stroke-width="2" fill="none" stroke-dasharray="6 6" class="flow">
         <path d="M114 110 h12"/><path d="M174 110 h12"/><path d="M234 110 h12"/><path d="M294 110 h12"/>
         <path d="M354 110 h12"/><path d="M414 110 h12"/><path d="M474 110 h12"/>
       </g>
-      <text x="60" y="80" fill="#489592" font-size="12" font-weight="700">acetyl cap</text>
+      <text x="60" y="80" fill="#954870" font-size="12" font-weight="700">acetyl cap</text>
       <text x="300" y="175" fill="#a9b1c9" font-size="12" text-anchor="middle">modeled on a fragment of the SNAP-25 protein</text>
       <text x="300" y="196" fill="#7f88a5" font-size="12" text-anchor="middle">the protein Botox famously targets — hence the nickname</text>
-      <rect x="170" y="214" width="260" height="4" rx="2" fill="#0f766e" opacity=".8"/>
+      <rect x="170" y="214" width="260" height="4" rx="2" fill="#0f5676" opacity=".8"/>
     </svg>
     <div class="cap">Eight amino acids in a row, copied from the business end of a nerve-signaling protein.</div>
   </div>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> SNAP-25 is a 206-amino-acid protein — imagine a 206-page instruction manual. Snap-8 is a photocopy of one eight-word sentence from it, then asked to do the manual’s job.</p></div>
   <div class="grid3">
     <div class="card sky reveal"><h3>Eight amino acids</h3><p>Acetyl octapeptide-3: a short synthetic peptide <strong>modeled on part of SNAP-25</strong>, a protein in the nerve-to-muscle signaling machinery. The "acetyl" cap helps stability.</p></div>
     <div class="card teal reveal"><h3>The Botox connection</h3><p>Botox works by <strong>disabling SNAP-25</strong> in treated muscles. Snap-8 borrows the same target for a cosmetic cream — which is where the "botox in a jar" nickname comes from.</p></div>
@@ -589,12 +630,13 @@ mini-poll { display: block; }
   <p class="lede">Neuroscience mapped the nerve-to-muscle telephone line. Cosmetics asked: <strong>what if we shout static at it through the skin?</strong> Then marketing named the static.</p>
 <div class="diagram reveal">
     <svg viewBox="0 0 640 260" role="img" aria-label="Timeline from SNARE research to Snap-8 marketing">
-      <line x1="40" y1="130" x2="600" y2="130" stroke="#0f766e" stroke-width="3" stroke-dasharray="8 6" class="flow"/>
-      <circle cx="70" cy="130" r="14" fill="#151b36" stroke="#5eead4" stroke-width="2.5" class="pulse"/><circle cx="70" cy="130" r="5" fill="#5eead4"/><line x1="70" y1="130" x2="70" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="236" cy="130" r="14" fill="#151b36" stroke="#0f766e" stroke-width="2.5" class="pulse"/><circle cx="236" cy="130" r="5" fill="#0f766e"/><line x1="236" y1="130" x2="236" y2="198" stroke="#3a4160" stroke-width="2"/><circle cx="403" cy="130" r="14" fill="#151b36" stroke="#5eead4" stroke-width="2.5" class="pulse"/><circle cx="403" cy="130" r="5" fill="#5eead4"/><line x1="403" y1="130" x2="403" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="570" cy="130" r="14" fill="#151b36" stroke="#0f766e" stroke-width="2.5" class="pulse"/><circle cx="570" cy="130" r="5" fill="#0f766e"/><line x1="570" y1="130" x2="570" y2="198" stroke="#3a4160" stroke-width="2"/><text x="70" y="52" fill="#5eead4" font-size="12" font-weight="800" text-anchor="middle">1990s</text><text x="70" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">SNARE research</text><text x="70" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">how nerves fire muscles</text><text x="236" y="208" fill="#5eead4" font-size="12" font-weight="800" text-anchor="middle">2000s</text><text x="236" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Botox goes mainstream</text><text x="236" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">the wrinkle-freezer era</text><text x="403" y="52" fill="#5eead4" font-size="12" font-weight="800" text-anchor="middle">2000s</text><text x="403" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Snap-8 developed</text><text x="403" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">a cosmetic cousin is born</text><text x="570" y="208" fill="#5eead4" font-size="12" font-weight="800" text-anchor="middle">2010s</text><text x="570" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">"Botox in a jar"</text><text x="570" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">the nickname takes over</text>
+      <line x1="40" y1="130" x2="600" y2="130" stroke="#0f5676" stroke-width="3" stroke-dasharray="8 6" class="flow"/>
+      <circle cx="70" cy="130" r="14" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5" class="pulse"/><circle cx="70" cy="130" r="5" fill="#ea5ea7"/><line x1="70" y1="130" x2="70" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="236" cy="130" r="14" fill="#151b36" stroke="#0f5676" stroke-width="2.5" class="pulse"/><circle cx="236" cy="130" r="5" fill="#0f5676"/><line x1="236" y1="130" x2="236" y2="198" stroke="#3a4160" stroke-width="2"/><circle cx="403" cy="130" r="14" fill="#151b36" stroke="#ea5ea7" stroke-width="2.5" class="pulse"/><circle cx="403" cy="130" r="5" fill="#ea5ea7"/><line x1="403" y1="130" x2="403" y2="62" stroke="#3a4160" stroke-width="2"/><circle cx="570" cy="130" r="14" fill="#151b36" stroke="#0f5676" stroke-width="2.5" class="pulse"/><circle cx="570" cy="130" r="5" fill="#0f5676"/><line x1="570" y1="130" x2="570" y2="198" stroke="#3a4160" stroke-width="2"/><text x="70" y="52" fill="#ea5ea7" font-size="12" font-weight="800" text-anchor="middle">1990s</text><text x="70" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">SNARE research</text><text x="70" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">how nerves fire muscles</text><text x="236" y="208" fill="#ea5ea7" font-size="12" font-weight="800" text-anchor="middle">2000s</text><text x="236" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Botox goes mainstream</text><text x="236" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">the wrinkle-freezer era</text><text x="403" y="52" fill="#ea5ea7" font-size="12" font-weight="800" text-anchor="middle">2000s</text><text x="403" y="68" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">Snap-8 developed</text><text x="403" y="82" fill="#7f88a5" font-size="10" text-anchor="middle">a cosmetic cousin is born</text><text x="570" y="208" fill="#ea5ea7" font-size="12" font-weight="800" text-anchor="middle">2010s</text><text x="570" y="224" fill="#a9b1c9" font-size="11" font-weight="700" text-anchor="middle">"Botox in a jar"</text><text x="570" y="238" fill="#7f88a5" font-size="10" text-anchor="middle">the nickname takes over</text>
     </svg>
     <div class="cap">From nerve-signaling science to a jar on the shelf — the nickname did more work than the molecule.</div>
   </div>
   <div class="kv reveal"><span class="k s">Nerve science</span><p>The SNARE complex — including <strong>SNAP-25</strong> — is how nerve endings release the chemical signal that tells a muscle fiber to contract. It is <strong>textbook neuroscience</strong>, and Botox’s famous target.</p></div>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> SNARE proteins work like a zipper — strands from two sides zip together to pull the vesicle into the membrane so it can dump its cargo. Snap-8 is a copy of a few zipper teeth, hoping to snag the pull.</p></div>
   <div class="kv reveal"><span class="k t">The cosmetic idea</span><p>Cosmetic chemists asked: what if a <strong>peptide fragment of SNAP-25</strong> could mildly interfere with that machinery from the skin surface? Snap-8 (acetyl octapeptide-3) was the commercial answer.</p></div>
   <div class="kv reveal"><span class="k o">Nickname vs science</span><p>"Botox in a jar" is <strong>marketing, not a mechanism claim</strong> — it promises the association while the fine print admits a fraction of the effect. The nickname is the product’s real engine.</p></div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Scientists mapped the <strong>telephone line between nerve and muscle</strong>; Botox cuts the line with surgical precision. Snap-8 <strong>shouts static at it through a wall</strong> (your skin). Same telephone line — very different volume.</p></div></section>
@@ -608,13 +650,104 @@ mini-poll { display: block; }
   <h2>How it’s <span class="hl">supposed</span> to work</h2>
   <p class="lede">A tidy four-step story where <strong>every step is weaker than the last</strong> — plausible biochemistry with a long, unproven journey to your forehead.</p>
 <div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">The signal, normally — nerve → synapse → muscle</h4>
+<svg viewBox="0 0 640 280" role="img" aria-label="Animation: nerve signal travels to the neuromuscular junction, acetylcholine is released, muscle contracts">
+<g font-size="12" font-weight="800" text-anchor="middle">
+<text x="135" y="24" fill="#ea5ea7" font-size="11" letter-spacing="1">1 · NERVE SIGNAL</text>
+<text x="320" y="24" fill="#26b8f9" font-size="11" letter-spacing="1">2 · RELEASE</text>
+<text x="510" y="24" fill="#26b8f9" font-size="11" letter-spacing="1">3 · CONTRACTION</text>
+<rect x="20" y="52" width="230" height="16" rx="8" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/>
+<circle r="5" fill="#ea5ea7"><animateMotion dur="2.4s" repeatCount="indefinite" path="M30 60 H240"/></circle>
+<circle r="5" fill="#ea5ea7" opacity=".55"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M30 60 H240"/></circle>
+<ellipse cx="300" cy="60" rx="52" ry="34" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/>
+<circle cx="285" cy="52" r="7" fill="#0f5676" class="vespop"/>
+<circle cx="308" cy="58" r="7" fill="#0f5676" class="vespop" style="animation-delay:.8s"/>
+<circle cx="296" cy="72" r="7" fill="#0f5676" class="vespop" style="animation-delay:1.6s"/>
+<line x1="352" y1="30" x2="352" y2="150" stroke="#7f88a5" stroke-width="1.5" stroke-dasharray="4 4" opacity=".6"/>
+<line x1="398" y1="30" x2="398" y2="150" stroke="#7f88a5" stroke-width="1.5" stroke-dasharray="4 4" opacity=".6"/>
+<circle r="4.5" fill="#26b8f9"><animateMotion dur="2.4s" repeatCount="indefinite" path="M354 60 H396"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle r="4.5" fill="#26b8f9"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M354 60 H396"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></circle>
+<text x="375" y="44" fill="#26b8f9" font-size="10">ACh</text>
+<g class="contract"><rect x="398" y="26" width="222" height="120" rx="16" fill="#151b36" stroke="#26b8f9" stroke-width="2"/></g>
+<path d="M398 66 l-9 -7 M398 66 l-9 7 M398 96 l-9 -7 M398 96 l-9 7 M398 126 l-9 -7 M398 126 l-9 7" stroke="#26b8f9" stroke-width="2" fill="none"/>
+<text x="515" y="82" fill="#edf0f9" font-size="12">muscle fiber</text>
+<text x="135" y="102" fill="#a9b1c9" font-size="11" font-weight="600">facial nerve</text>
+<text x="300" y="170" fill="#a9b1c9" font-size="11" font-weight="600">nerve terminal</text>
+<text x="375" y="170" fill="#a9b1c9" font-size="11" font-weight="600">synaptic cleft</text>
+<text x="515" y="170" fill="#a9b1c9" font-size="11" font-weight="600">contracts</text>
+<text x="320" y="252" fill="#7f88a5" font-size="12" font-weight="600">Signal travels nerve → synapse → muscle. The normal, healthy sequence.</text>
+</g></svg>
+<div class="cap">Every frown runs this relay: nerve fires, vesicles dump acetylcholine, muscle squeezes.</div>
+</div>
+<div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> the junction between nerve and muscle is like passing a note across a hallway — the nerve writes “contract” on it, and the muscle only moves when the note arrives.</p></div>
+<div class="bridge reveal"><strong>This is the machinery SNAP-8 is named after.</strong> The nerve terminal packs acetylcholine into vesicles, and the <strong>SNARE complex</strong> — including the protein <strong>SNAP-25</strong> — is the docking machinery that lets those vesicles fuse and dump their cargo. Botox works by <strong>cutting SNAP-25</strong>. SNAP-8's idea is far gentler: <strong>mimic a piece of it</strong> and gum up the works.</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">SNAP-25 vs SNAP-8 — and the proposed interference</h4>
+<svg viewBox="0 0 640 300" role="img" aria-label="Animation: SNAP-8 modeled after part of SNAP-25, proposed to interfere with SNARE-mediated vesicle release">
+<g font-size="12" font-weight="800" text-anchor="middle">
+<text x="160" y="28" fill="#ea5ea7" font-size="11" letter-spacing="1">SNAP-25: THE 206-AMINO-ACID PROTEIN</text>
+<rect x="40" y="52" width="240" height="24" rx="12" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/>
+<rect x="40" y="52" width="22" height="24" rx="11" fill="#26b8f9" opacity=".9"/>
+<text x="160" y="112" fill="#a9b1c9" font-size="11" font-weight="600">SNAP-8 copies just this 8-amino-acid piece</text>
+<path d="M62 78 V104" stroke="#26b8f9" stroke-width="2" stroke-dasharray="4 3"/>
+<g>
+<circle cx="80" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8"/><circle cx="102" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:.2s"/><circle cx="124" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:.4s"/><circle cx="146" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:.6s"/><circle cx="168" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:.8s"/><circle cx="190" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:1s"/><circle cx="212" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:1.2s"/><circle cx="234" cy="140" r="8" fill="#0f5676" stroke="#ea5ea7" stroke-width="1.5" class="bead8" style="animation-delay:1.4s"/>
+</g>
+<text x="157" y="172" fill="#ea5ea7" font-size="11">SNAP-8 · acetyl octapeptide</text>
+<rect x="452" y="36" width="118" height="26" rx="13" fill="#26b8f9" opacity=".92"/>
+<text x="511" y="54" fill="#111" font-size="11">PROPOSED</text>
+<text x="480" y="96" fill="#a9b1c9" font-size="11" font-weight="600">synaptic vesicle</text>
+<circle cx="430" cy="132" r="26" fill="#151b36" stroke="#26b8f9" stroke-width="2"/>
+<circle cx="422" cy="126" r="4" fill="#26b8f9" opacity=".8"/><circle cx="438" cy="132" r="4" fill="#26b8f9" opacity=".8"/><circle cx="428" cy="140" r="4" fill="#26b8f9" opacity=".8"/>
+<line x1="415" y1="158" x2="415" y2="200" stroke="#ea5ea7" stroke-width="3" class="snarezip"/>
+<line x1="430" y1="158" x2="430" y2="200" stroke="#ea5ea7" stroke-width="3" class="snarezip"/>
+<line x1="445" y1="158" x2="445" y2="200" stroke="#ea5ea7" stroke-width="3" class="snarezip"/>
+<text x="392" y="192" fill="#a9b1c9" font-size="10" font-weight="600">SNARE</text>
+<line x1="360" y1="200" x2="600" y2="200" stroke="#ea5ea7" stroke-width="3"/>
+<text x="580" y="222" fill="#a9b1c9" font-size="10" font-weight="600">cell membrane</text>
+<rect x="478" y="140" width="76" height="28" rx="14" fill="none" stroke="#26b8f9" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="516" y="159" fill="#26b8f9" font-size="10">SNAP-8?</text>
+<path d="M478 154 L452 160" stroke="#26b8f9" stroke-width="1.5" stroke-dasharray="4 3"/>
+<circle r="4" fill="#26b8f9" opacity=".5"><animateMotion dur="3.2s" repeatCount="indefinite" path="M430 228 V266"/><animate attributeName="opacity" values="0;.5;.5;0" dur="3.2s" repeatCount="indefinite"/></circle>
+<text x="470" y="252" fill="#7f88a5" font-size="10" font-weight="600">trickle of ACh</text>
+<text x="320" y="282" fill="#7f88a5" font-size="12" font-weight="600">The idea: SNAP-8 competes at the SNARE complex, so less acetylcholine gets released.</text>
+<text x="320" y="296" fill="#7f88a5" font-size="11" font-weight="600">Proposed — never shown happening in living skin.</text>
+</g></svg>
+<div class="cap">An 8-bead copy of a 206-bead protein, auditioning to jam the release machinery.</div>
+</div>
+<div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> acetylcholine is a chemical text message that says “contract.” A full nerve signal is your phone buzzing nonstop; the Snap-8 proposal is one message arriving late.</p></div>
+<div class="bridge reveal"><strong>Now the wrinkle part.</strong> A single frown does nothing. But the forehead is a muscle that fires <strong>thousands of times a day</strong>, for decades — and skin, like paper folded too often, eventually keeps the crease. That is a <strong>dynamic wrinkle</strong>: etched by repetition.</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">How expression wrinkles form — and the proposal</h4>
+<svg viewBox="0 0 640 260" role="img" aria-label="Animation: repeated muscle contraction deepens a skin crease; proposed softer contractions slow it">
+<g font-size="12" font-weight="800" text-anchor="middle">
+<text x="160" y="28" fill="#ea5ea7" font-size="11" letter-spacing="1">REPEATED CONTRACTION</text>
+<text x="480" y="28" fill="#26b8f9" font-size="11" letter-spacing="1">PROPOSED: SOFTER SIGNALS</text>
+<path d="M30 60 H140 L160 92 L180 60 H290" stroke="#edf0f9" stroke-width="3" fill="none"/>
+<text x="160" y="52" fill="#7f88a5" font-size="10" font-weight="600">skin surface</text>
+<g class="contract"><rect x="60" y="120" width="200" height="46" rx="23" fill="#151b36" stroke="#26b8f9" stroke-width="2"/></g>
+<text x="160" y="149" fill="#edf0f9" font-size="11">frowning muscle</text>
+<text x="160" y="200" fill="#a9b1c9" font-size="11" font-weight="600">thousands of contractions…</text>
+<text x="160" y="218" fill="#a9b1c9" font-size="11" font-weight="600">dynamic line etched deeper</text>
+<path d="M350 60 H460 L480 72 L500 60 H610" stroke="#edf0f9" stroke-width="3" fill="none" opacity=".85"/>
+<g class="contract-soft"><rect x="380" y="120" width="200" height="46" rx="23" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/></g>
+<text x="480" y="149" fill="#edf0f9" font-size="11">quieter muscle</text>
+<text x="480" y="200" fill="#a9b1c9" font-size="11" font-weight="600">softer signals (proposed)…</text>
+<text x="480" y="218" fill="#a9b1c9" font-size="11" font-weight="600">line forms more slowly</text>
+<text x="320" y="250" fill="#7f88a5" font-size="12" font-weight="600">Expression lines are etched by repetition. Turn down each contraction, slow the etching — in theory.</text>
+</g></svg>
+<div class="cap">Paper folded once is fine. Folded ten thousand times, it keeps the crease.</div>
+</div>
+<div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> a trail worn across a lawn — nobody planned it, but ten thousand footsteps carved it anyway. Expression lines are the face’s footpaths.</p></div>
+
+<div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step proposed mechanism of Snap-8">
-      <g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#5eead4" stroke-width="2"/><text x="84" y="105" fill="1">ABSORB · #5eead4</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Peptide sits on skin,</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">a fraction sinks in</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0f766e" stroke-width="2"/><text x="236" y="105" fill="2">INTERFERE · #0f766e</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Mimics SNAP-25, muddles</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">the contraction signal</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#489592" stroke-width="2"/><text x="388" y="105" fill="3">RELAX · #489592</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Micro-contractions</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">soften slightly</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0f766e" stroke-width="2"/><text x="540" y="105" fill="4">SMOOTH · #0f766e</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Expression lines look</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">a touch shallower</text></g>
+      <g font-size="13" font-weight="800" text-anchor="middle"><rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/><text x="84" y="105" fill="#ea5ea7">ABSORB</text><text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Peptide sits on skin,</text><text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">a fraction sinks in</text><rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0f5676" stroke-width="2"/><text x="236" y="105" fill="#0f5676">INTERFERE</text><text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Mimics SNAP-25, muddles</text><text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">the contraction signal</text><rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#954870" stroke-width="2"/><text x="388" y="105" fill="#954870">RELAX</text><text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Micro-contractions</text><text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">soften slightly</text><rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#0f5676" stroke-width="2"/><text x="540" y="105" fill="#0f5676">SMOOTH</text><text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Expression lines look</text><text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">a touch shallower</text></g>
       <g stroke="#7f88a5" stroke-width="2" fill="none" class="flow" stroke-dasharray="6 6"><path d="M148 120 h24"/><path d="M300 120 h24"/><path d="M452 120 h24"/></g>
       <text x="320" y="220" fill="#7f88a5" font-size="12" text-anchor="middle">The proposed chain — each step weaker than the last, and none proven strong</text>
     </svg>
     <div class="cap">The textbook story. A game of telephone where every whisper loses volume.</div>
-  </div><div class="ebar"><div class="row"><span class="t">Dish studies (SNARE models)</span><span class="v">it does something</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#0f766e,#5eead4)"></div></div><div class="note">In cell models, the peptide can modulate SNARE-complex assembly — real biochemistry, far from a face.</div></div><div class="ebar"><div class="row"><span class="t">Skin-penetration data</span><span class="v">limited</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#5eead4,#489592)"></div></div><div class="note">An 8-amino-acid peptide is large for skin penetration; how much reaches nerve endings is unclear.</div></div><div class="ebar"><div class="row"><span class="t">Human wrinkle trials</span><span class="v">small, manufacturer-led</span></div><div class="track"><div class="fill" style="--w:28%;background:linear-gradient(90deg,#489592,#0f766e)"></div></div><div class="note">Small company studies report wrinkle-depth improvements; independent replication is missing.</div></div><div class="ebar"><div class="row"><span class="t">Drug-level evidence</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
+  </div><div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> imagine trying to slow a closing elevator door with a fingertip. You’re pushing on the right door — you just don’t have the force to matter. That is the proposed interference.</p></div><div class="ebar reveal"><div class="row"><span class="t">Dish studies (SNARE models)</span><span class="v">it does something</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#0f5676,#ea5ea7)"></div></div><div class="note">In cell models, the peptide can modulate SNARE-complex assembly — real biochemistry, far from a face.</div></div><div class="ebar reveal"><div class="row"><span class="t">Skin-penetration data</span><span class="v">limited</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#ea5ea7,#954870)"></div></div><div class="note">An 8-amino-acid peptide is large for skin penetration; how much reaches nerve endings is unclear.</div></div><div class="ebar reveal"><div class="row"><span class="t">Human wrinkle trials</span><span class="v">small, manufacturer-led</span></div><div class="track"><div class="fill" style="--w:28%;background:linear-gradient(90deg,#954870,#0f5676)"></div></div><div class="note">Small company studies report wrinkle-depth improvements; independent replication is missing.</div></div><div class="ebar reveal"><div class="row"><span class="t">Drug-level evidence</span><span class="v">none</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div></div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch: <strong>absorb → interfere → relax → smooth</strong>. Like trying to <strong>dim a stadium light with a tinted window</strong> — the physics is real, but the effect is a whisper next to flipping the switch (Botox).</p></div></section>
 <mini-poll slug="snap8-mini-ch3"
   data-question="Which proposed step is most believable?"
@@ -631,7 +764,23 @@ mini-poll { display: block; }
     <div class="card teal reveal"><h3>Weak human evidence</h3><p>Human data is <strong>small, short, manufacturer-run</strong> wrinkle-depth studies. The famous percentages come from the seller’s lab, not independent science.</p></div>
     <div class="card org reveal"><h3>The potency gap</h3><p>Even the friendliest reading puts topical Snap-8 <strong>orders of magnitude below</strong> injected Botox. "Botox in a jar" is a metaphor that forgot it was a metaphor.</p></div>
   </div>
-  <div class="plain reveal"><div class="plabel">Plain English</div><p>Snap-8’s report card: <strong>good at chemistry, unproven at cosmetology</strong>. The molecule genuinely interacts with the right machinery in a dish — and then has to cross skin, find nerve endings, and matter. That is three miracles, and the evidence covers maybe half of one.</p></div></section>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> a chef tasting their own dish and declaring it perfect. The palate might be honest — but you’d still rather hear it from a critic who’s never met the chef.</p></div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Snap-8’s report card: <strong>good at chemistry, unproven at cosmetology</strong>. The molecule genuinely interacts with the right machinery in a dish — and then has to cross skin, find nerve endings, and matter. That is three miracles, and the evidence covers maybe half of one.</p></div>
+  <div class="grid2">
+    <div class="card sky reveal"><h3>What it does</h3><ul>
+      <li><strong>Genuinely touches SNARE machinery</strong> in lab models — the mechanism is not invented.</li>
+      <li><strong>Shows small wrinkle-depth changes</strong> in small, manufacturer-led human studies.</li>
+      <li><strong>Moisturizes and conditions</strong> skin like any cosmetic base — hydration alone softens lines.</li>
+      <li><strong>Offers a needle-free option</strong> for people who will never consider injections.</li>
+    </ul></div>
+    <div class="card org reveal"><h3>What it doesn’t do</h3><ul>
+      <li><strong>Does not paralyze muscles</strong> — nothing like Botox-level neuromuscular blockade.</li>
+      <li><strong>Does not match Botox</strong> on depth, duration, or reliability of effect.</li>
+      <li><strong>Has not been shown</strong> to reach nerve endings in meaningful amounts through skin.</li>
+      <li><strong>Has no independent large trials</strong> — the percentages come from the seller’s lab.</li>
+    </ul></div>
+  </div>
+</section>
 <mini-poll slug="snap8-mini-ch4"
   data-question="Manufacturer-run wrinkle studies — your reaction?"
   data-answers='[["📊", "Dealbreaker"], ["⏳", "Better than nothing"], ["🔢", "The percentages convince me"], ["⚠️", "That gap worries me"]]'>
@@ -649,12 +798,12 @@ mini-poll { display: block; }
   </div><div class="diagram reveal">
     <svg viewBox="0 0 640 230" role="img" aria-label="Snap-8 and Botox as two paths converging on expression lines">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#5eead4" stroke-width="2"/>
-        <text x="130" y="75" fill="#5eead4">Snap-8</text>
+        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#ea5ea7" stroke-width="2"/>
+        <text x="130" y="75" fill="#ea5ea7">Snap-8</text>
         <text x="130" y="98" fill="#a9b1c9" font-size="11" font-weight="600">topical peptide</text>
         <text x="130" y="114" fill="#a9b1c9" font-size="11" font-weight="600">faint, cosmetic</text>
-        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#0f766e" stroke-width="2"/>
-        <text x="510" y="75" fill="#0f766e">Botox</text>
+        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#0f5676" stroke-width="2"/>
+        <text x="510" y="75" fill="#0f5676">Botox</text>
         <text x="510" y="98" fill="#a9b1c9" font-size="11" font-weight="600">injectable toxin</text>
         <text x="510" y="114" fill="#a9b1c9" font-size="11" font-weight="600">potent, medical</text>
         <rect x="230" y="150" width="180" height="60" rx="14" fill="#151b36" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5"/>
@@ -667,18 +816,96 @@ mini-poll { display: block; }
     </svg>
     <div class="cap">One whispers at the machinery through skin; the other switches it off with a needle.</div>
   </div>
-  <div class="plain reveal"><div class="plabel">Plain English</div><p>Snap-8 is <strong>shouting suggestions through a wall</strong>; Botox is <strong>walking into the room and flipping the breaker</strong>. Both address the same wiring. Only one of them reliably turns off the lights.</p></div></section>
+  
+  <div class="diagram reveal">
+  <h4 style="margin:0 0 .4rem;color:var(--ink)">Same target, different universe</h4>
+  <div class="twrap"><table class="trial">
+    <tr><th></th><th>Snap-8</th><th>Botox</th></tr>
+    <tr><td><strong>Mechanism</strong></td><td>Mimics part of SNAP-25; <strong>proposed</strong> to mildly interfere with SNARE assembly</td><td><strong>Cleaves SNAP-25</strong>; blocks acetylcholine release for months</td></tr>
+    <tr><td><strong>Delivery</strong></td><td>Topical cream/serum — must cross skin</td><td><strong>Injected</strong> directly into target muscle</td></tr>
+    <tr><td><strong>Evidence</strong></td><td>Small, manufacturer-led cosmetic studies</td><td><strong>Decades of clinical trials</strong>, approved drug</td></tr>
+    <tr><td><strong>Clinical status</strong></td><td>Cosmetic ingredient, no drug approval</td><td><strong>Prescription medicine</strong> (cosmetic + therapeutic)</td></tr>
+    <tr><td><strong>Effect size</strong></td><td>Subtle, if any — a whisper</td><td><strong>Profound, reliable</strong> muscle relaxation</td></tr>
+    <tr><td><strong>Duration</strong></td><td>While you keep applying it (proposed)</td><td><strong>3–4 months</strong> per treatment</td></tr>
+    <tr><td><strong>Risks</strong></td><td>Mild irritation; mostly <strong>wallet risk</strong></td><td>Bruising, asymmetry, droop — <strong>clinician-managed</strong></td></tr>
+  </table></div>
+  <div class="cap">Both orbit SNAP-25. Everything else — delivery, evidence, potency — lives in a different universe.</div>
+  </div>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> an umbrella and a roof both keep rain off you — but only one of them survives a storm. Delivery and evidence are the roof here, not the rain.</p></div>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Snap-8 vs Argireline</h3><p><strong>Argireline</strong> (acetyl hexapeptide-3) is the <strong>6-amino-acid predecessor</strong> from the same research lineage — same proposed SNARE pathway, smaller molecule, arguably a better penetration story. Snap-8 was developed as its <strong>longer, supposedly stronger successor</strong>. Independent evidence is thin for both; the family resemblance is stronger than the proof.</p></div>
+    <div class="card teal reveal"><h3>Vs other cosmetic peptides</h3><p><strong>Signal peptides</strong> (Matrixyl family) aim at <strong>collagen signaling</strong> — a different job entirely. <strong>Copper peptides</strong> target skin remodeling. Snap-8 is the odd one out: the only common cosmetic peptide aimed at the <strong>contraction signal</strong> rather than the skin structure.</p></div>
+    <div class="card org reveal"><h3>The honest ranking</h3><p>By evidence of visible effect: <strong>Botox &#8811; Argireline &#8776; Snap-8 &gt; hope</strong>. The two topical peptides are siblings separated by two amino acids and a marketing budget — neither has escaped the shadow of the nickname.</p></div>
+  </div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>Snap-8 is <strong>shouting suggestions through a wall</strong>; Botox is <strong>walking into the room and flipping the breaker</strong>. Both address the same wiring. Only one of them reliably turns off the lights.</p></div></section>
 <mini-poll slug="snap8-mini-ch5"
-  data-question="Snap-8 vs Botox — which interests you more?"
-  data-answers='[["🫙", "Snap-8 the whisper"], ["💉", "Botox the switch"], ["🤝", "Different jobs"], ["📊", "Neither until trials"]]'>
+  data-question="Snap-8 vs Botox vs Argireline — which comparison matters most?"
+  data-answers='[["💨", "Whisper vs switch"], ["🧬", "Snap-8 vs Argireline"], ["🧪", "Mechanism matters most"], ["📊", "Show me real trials"]]'>
 </mini-poll>
 <!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Almost everything online comes from <strong>skincare forums and review sections</strong> — people buying the nickname and reporting back. Stories, not data.</p>
-
-  <p class="lede" style="margin-bottom:1.2rem">Almost everything online comes from <strong>skincare forums and review sections</strong> — people buying "botox in a jar" and reporting back. Stories, not data, with Botox’s shadow over all of it.</p>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>What Snap-8 <span class="hl">might</span> offer</h2>
+  <p class="lede">Snap-8 is a <strong>cosmetic, not a medicine</strong> — so this chapter keeps its benefit file honest: what is genuinely established, what is only proposed, and what strangers on the internet report. The three piles are <strong>not equal</strong>.</p>
+  <div class="tierband reveal"><span class="tbadge tb-est">✓ Established scientific data</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> measured and replicated — but notice how short this pile is for a cosmetic ingredient.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Real biochemistry, in dishes</h3><p>In cell models, acetyl octapeptide-3 <strong>modulates SNARE-complex assembly</strong> — the proposed interference is not imaginary. “In a dish” is doing heavy lifting here.</p></div>
+    <div class="card teal reveal"><h3>Cosmetic-grade tolerability</h3><p>As a topical skincare ingredient it is <strong>generally mild</strong>; the observed downside is occasional irritation, not systemic harm. Gentle, though — not proven effective.</p></div>
+    <div class="card org reveal"><h3>What “established” does not include</h3><p>No independent trial has established <strong>visible wrinkle reduction</strong> on real faces. Everything below this badge is a thinner claim — read on accordingly.</p></div>
+  </div>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> “established” for a cosmetic is like a restaurant’s health-inspection certificate — it proves the kitchen is clean, not that the food is good.</p></div>
+  <div class="tierband reveal"><span class="tbadge tb-emg">◐ Predicted or emerging data</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> plausible from small studies and theory — interesting, not proven.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Wrinkle-depth percentages</h3><p>Small <strong>manufacturer-led studies</strong> report reduced wrinkle depth. The numbers come from the seller’s lab; independent replication is missing.</p></div>
+    <div class="card teal reveal"><h3>The penetration hypothesis</h3><p>If enough peptide crossed skin to reach nerve endings, contraction signaling <strong>might</strong> soften. Whether meaningful amounts arrive is <strong>unproven</strong>.</p></div>
+    <div class="card org reveal"><h3>Argireline’s successor story</h3><p>Developed as a longer, supposedly stronger follow-up to acetyl hexapeptide-3. The family story is neat; the independent evidence is thin for both.</p></div>
+  </div>
+  <div class="tierband reveal"><span class="tbadge tb-com">● Community reports</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> recurring stories from forums and social media — unverified, and never evidence.</p>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Stories, not data</strong> — the pulsing dot marks paraphrased recurring themes: not verified, not evidence.</p></div>
+  <div class="anec-grid">
+    <div class="anec reveal"><div class="anec-head"><h4>The forehead test</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“My elevens look softer in photos after six weeks.” <strong>Caveat:</strong> lighting, hydration, and frown effort all move the needle.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The Botox bridge</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I use it between Botox appointments to stretch the time.” <strong>Caveat:</strong> anything used alongside Botox gets Botox’s credit.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The needle-phobe’s option</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I won’t do injections, so this is my option.” <strong>Caveat:</strong> a real preference — but “my only option” is not evidence it works.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The honest shrug</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Maybe it helps, maybe my moisturizer does. I like the ritual.” <strong>Caveat:</strong> the most honest review in the category.</p></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Established: it <strong>touches real biochemistry</strong> and is <strong>gentle on skin</strong>. Proposed: softer-looking lines, <strong>if</strong> it reaches its target. Reported: a mix of soft-focus selfies and shrugs. Keep the piles separate and the nickname does the selling, not the science.</p></div>
+</section>
+<mini-poll slug="snap8-mini-benefits"
+  data-question="Snap-8&#39;s benefit file — which tier carries the most weight for you?"
+  data-answers='[["🧪", "Established data"], ["🔬", "Emerging research"], ["💬", "Community stories"], ["⚖️", "None convince me"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it may not</span></h2>
+  <p class="lede">A cosmetic peptide is a <strong>low-stakes, low-evidence</strong> purchase — but “low stakes” still deserves an honest fit check.</p>
+  <div class="grid2">
+    <div class="card sky reveal"><h3>Who it may be relevant to</h3><ul class="fitlist">
+      <li><strong>Adults curious about topical-only options</strong> for expression lines who understand exactly how faint the evidence is.</li>
+      <li><strong>People who avoid injections</strong> and accept the potency gap — a whisper is fine when you never wanted a switch.</li>
+      <li><strong>Skincare enthusiasts</strong> who enjoy the ritual and won’t mind if the visible change is subtle or absent.</li>
+    </ul></div>
+    <div class="card org reveal"><h3>Who it may not suit — or should pause</h3><ul class="fitlist">
+      <li><strong>Anyone expecting Botox-level results</strong> — the nickname sets a trap; the molecule cannot spring it.</li>
+      <li><strong>People with reactive skin</strong> prone to irritation from active ingredients.</li>
+      <li><strong>Anyone using a cosmetic to postpone needed dermatology care</strong> — a jar is not a treatment plan.</li>
+      <li><strong>Shoppers who’d resent paying for a whisper</strong> — disappointment is the realistic risk here.</li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">A clear line</div><p>This is <strong>general information, not personal medical advice.</strong> Skin is personal; a dermatologist can say what a webpage cannot.</p></div>
+</section>
+<mini-poll slug="snap8-mini-fit"
+  data-question="After the fit check — where do you land on Snap-8?"
+  data-answers='[["🫙", "Curious to try"], ["🤔", "On the fence"], ["💸", "Not worth it for me"], ["👩‍⚕️", "Asking a dermatologist first"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Community Reports</span>
+  <h2>Community <span class="hl">Reports</span></h2>
+  <p class="lede" style="margin-bottom:1.2rem">Across <strong>Reddit, TikTok, YouTube Shorts, skincare forums, and review sections</strong>, people buy the nickname and report back: perceived wrinkle reduction, forehead and crow’s-feet changes, skin texture, timelines — and plenty of <strong>little or no effect</strong>. <strong>Stories, not data</strong> — with Botox’s shadow over all of it.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
   <div class="anec-grid">
     <div class="anec reveal"><div class="anec-head"><h4>The forehead test</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>&ldquo;My elevens look softer in photos after six weeks.&rdquo; <strong>Caveat:</strong> expression lines vary with hydration, lighting, and how hard you are frowning that day.</p><div class="caveat">Pattern: the classic subtle-improvement story: real observation, unknowable cause.</div></div>
@@ -691,13 +918,13 @@ mini-poll { display: block; }
     <div class="anec reveal"><div class="anec-head"><h4>The honest shrug</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>&ldquo;Maybe it helps, maybe my moisturizer does. I like the ritual.&rdquo; <strong>Caveat:</strong> the most honest review in the category — and the least clickable.</p><div class="caveat">Pattern: ritual and hydration doing the quiet work.</div></div>
   </div>
   <div class="folk-note reveal"><p>Read these the way scientists read case reports: <strong>useful for generating hypotheses, useless for proving them</strong>. The most honest sentence in this category is "it might be the moisturizer" — because it usually might be.</p></div></section>
-<mini-poll slug="snap8-mini-ch6"
-  data-question="Anti-aging stories online — how do you read them?"
+<mini-poll slug="snap8-mini-ch8"
+  data-question="Community reports on Snap-8 — how do you read them?"
   data-answers='[["💬", "Encouraging"], ["🧂", "Salt required"], ["🚫", "Placebo-prone"], ["⚖️", "Stories aren&#39;t data"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Risks & unknowns</span>
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede">A gentle cosmetic with <strong>honest uncertainties</strong> — and a nickname that promises more than chemistry has shown.</p>
 
@@ -710,35 +937,40 @@ mini-poll { display: block; }
     <div class="scard lvl-unknown reveal"><h4>What the %s mean</h4><p><strong>Unknown:</strong> wrinkle-depth percentages from tiny studies may not equal <strong>visible</strong> change. Machines measure millimeters; mirrors measure meaning.</p></div>
   </div>
   <div class="plain reveal"><div class="plabel">Plain English</div><p>Known: it is a <strong>gentle cosmetic</strong>; the realistic worst case is <strong>disappointment at the register</strong>. Unknown: how much reaches its target, and whether the nickname promises more than chemistry can deliver. This is a wallet risk wearing a lab coat.</p></div></section>
-<mini-poll slug="snap8-mini-ch7"
+<mini-poll slug="snap8-mini-ch9"
   data-question="Which unknown bothers you most?"
   data-answers='[["🧪", "Does it reach nerves?"], ["🔢", "What the percentages mean"], ["🫙", "The nickname hype"], ["❓", "All of it"]]'>
 </mini-poll>
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Glossary</span>
-  <h2>Speak <span class="hl">expression-line</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">SNAP8</span> terminology</h2>
+  <p class="lede">Twelve terms, each with the scientific definition and a plain-English translation. Tap any term to expand it.</p>
 
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M14 24h20M24 14v20" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Snap-8</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Trade name for acetyl octapeptide-3, a cosmetic peptide marketed for expression lines — "botox in a jar."</p><p class="gex"><span class="gslabel">Example</span>The product this whole page is about — the whisper, not the switch.</p><div class="plain"><span class="plabel">Plain English</span>A lab-made peptide in creams that borrows Botox’s reputation.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M18 8h12v6l-6 4-6-4zM24 18v14M16 40h16" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Acetyl octapeptide-3</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The chemical name: an eight-amino-acid peptide with an acetyl cap, modeled on part of the SNAP-25 protein.</p><p class="gex"><span class="gslabel">Example</span>What "Snap-8" means in chemist language.</p><div class="plain"><span class="plabel">Plain English</span>The full name of the decoy key.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M24 6c6 8 10 14 10 20a10 10 0 0 1-20 0c0-6 4-12 10-20z" fill="none" stroke="#489592" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">SNAP-25</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A protein in the SNARE complex that helps nerve endings release the signal telling muscles to contract — Botox’s famous target.</p><p class="gex"><span class="gslabel">Example</span>The lock the decoy key was cut from.</p><div class="plain"><span class="plabel">Plain English</span>A cog in the nerve-to-muscle telephone line.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M24 40C14 32 8 26 8 18a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 8-6 14-16 22z" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">SNARE complex</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The protein machinery (including SNAP-25) that lets nerve endings dump neurotransmitter and fire a muscle contraction.</p><p class="gex"><span class="gslabel">Example</span>The telephone exchange Snap-8 is trying to gum up.</p><div class="plain"><span class="plabel">Plain English</span>The machinery that delivers the "contract!" message.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M24 6l14 6v10c0 10-6 16-14 20C16 38 10 32 10 22V12z" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Botox</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Botulinum toxin injections that block SNAP-25 in treated muscles for months — a prescription medicine with decades of trial data.</p><p class="gex"><span class="gslabel">Example</span>The switch to Snap-8’s whisper — same wiring, different universe.</p><div class="plain"><span class="plabel">Plain English</span>The real wrinkle-freezer, needle included.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M10 24a14 14 0 0 1 24-9M38 24a14 14 0 0 1-24 9M30 10l4 5-5 4M18 38l-4-5 5-4" fill="none" stroke="#489592" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Expression lines</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Wrinkles etched by repeated facial movement — forehead lines, crow’s feet, frown lines. The shared target of both products.</p><p class="gex"><span class="gslabel">Example</span>The battlefield both sides claim.</p><div class="plain"><span class="plabel">Plain English</span>Wrinkles your face rehearsed into permanence.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M20 20a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM26 26l12 12" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Topical</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Applied to the skin surface. Everything about Snap-8 is topical — which is exactly why the potency gap exists.</p><p class="gex"><span class="gslabel">Example</span>Why a cream can never be a needle.</p><div class="plain"><span class="plabel">Plain English</span>Rubbed on, not put in.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M6 18c4-6 8-6 12 0s8 6 12 0 8-6 12 0M6 30c4-6 8-6 12 0s8 6 12 0 8-6 12 0" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Wrinkle depth</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A machine-measured quantity — how deep a wrinkle is. The metric behind the marketing percentages.</p><p class="gex"><span class="gslabel">Example</span>The number the ads quote.</p><div class="plain"><span class="plabel">Plain English</span>How deep the canyon is, measured by a machine.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M24 14a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM24 4v6M24 38v6M4 24h6M38 24h6" fill="none" stroke="#489592" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Acetylcholine</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The neurotransmitter released when the SNARE complex fires — the actual "contract!" chemical message to the muscle.</p><p class="gex"><span class="gslabel">Example</span>The message Snap-8 hopes to muffle.</p><div class="plain"><span class="plabel">Plain English</span>The chemical text message that says "contract."</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M10 10h12v12H10zM26 10h12v12H26zM10 26h12v12H10zM26 26h12v12H26z" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Muscle contraction</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>What happens when the nerve signal arrives — the micro-contractions that, repeated for decades, etch expression lines.</p><p class="gex"><span class="gslabel">Example</span>The thing everyone is trying to calm down.</p><div class="plain"><span class="plabel">Plain English</span>The squeeze that draws the lines.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M10 14h28v20H10zM10 14l14 10 14-10" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">In-vitro</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>"In glass" — dish experiments. Where the least disputed Snap-8 signals live.</p><p class="gex"><span class="gslabel">Example</span>Why dish results should never be read as face results.</p><div class="plain"><span class="plabel">Plain English</span>Science done in a petri dish, not on a person.</div></div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M10 8h16a6 6 0 0 1 6 6v22H16a6 6 0 0 1-6-6zM16 8v28" fill="none" stroke="#489592" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Improvement from expectation — powerful for subjective wrinkle assessments, exactly where cosmetic anecdotes live.</p><p class="gex"><span class="gslabel">Example</span>The eternal rival explanation for every glowing review.</p><div class="plain"><span class="plabel">Plain English</span>Looking smoother because you expect to.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M14 24h20M24 14v20" fill="none" stroke="#ea5ea7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Snap-8</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Trade name for acetyl octapeptide-3, a synthetic cosmetic peptide marketed in creams and serums as a milder, needle-free alternative to botulinum toxin for facial expression lines. It was designed as a fragment of the SNAP-25 protein, on the hypothesis that competing with SNAP-25 could weaken the nerve-to-muscle signal that etches wrinkles. Because it is sold only as a topical, very little is established about how much — if any — reaches the nerve terminals it is supposed to affect. Clinical evidence for visible wrinkle reduction is limited to small cosmetic-industry studies, and it is not an approved drug.</p><div class="plain"><span class="plabel">Plain English</span>Snap-8 is a lab-made peptide sold in anti-wrinkle creams, nicknamed "botox in a jar" by marketers. It was modeled on a piece of the nerve protein Botox disables, on the idea that it might gently soften the signal telling facial muscles to contract. But a cream has to cross the skin barrier first, and nobody has shown that it reaches the nerve endings in any meaningful amount. The proof behind it is far thinner than the advertising suggests, and it is not a regulated medicine.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M18 8h12v6l-6 4-6-4zM24 18v14M16 40h16" fill="none" stroke="#0f5676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Acetyl octapeptide-3</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The chemical name of the Snap-8 molecule: a chain of eight amino acids with an acetyl group capping one end. Its sequence was modeled on the N-terminal region of SNAP-25, a protein essential to nerve-signal release at the neuromuscular junction. The design hypothesis is that this short fragment could interfere with SNARE complex assembly and thereby dampen the signal that makes facial muscles contract. Whether a topically applied octapeptide reaches nerve terminals in meaningful amounts has not been established. It is a cosmetic ingredient, not a pharmaceutical drug, and it carries no drug approval.</p><div class="plain"><span class="plabel">Plain English</span>This is Snap-8's real chemical name: eight amino-acid building blocks strung together, with a small acetyl cap on one end. It was copied from the front end of a nerve protein that Botox targets, on the theory that it could gum up the same release machinery from a cream. The catch is that nobody has shown a cream ingredient actually reaches the nerve endings it is supposed to affect. It is a skincare ingredient, not a medicine, and regulators have never approved it as one.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M24 6c6 8 10 14 10 20a10 10 0 0 1-20 0c0-6 4-12 10-20z" fill="none" stroke="#954870" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">SNAP-25</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Synaptosomal-associated protein 25, a protein in the membrane of nerve terminals that helps synaptic vesicles fuse and release neurotransmitter. It is one of the three core proteins of the SNARE complex, the machinery that converts an electrical nerve impulse into a chemical message to the muscle. Botulinum toxin (Botox) works by cleaving SNAP-25, which blocks neurotransmitter release and temporarily quiets the treated muscle. Because of this, SNAP-25 is the famous molecular target behind the most-used wrinkle treatment in the world. Snap-8 was designed to mimic a fragment of it, through a far weaker and far less proven route.</p><div class="plain"><span class="plabel">Plain English</span>SNAP-25 is a small protein on nerve endings that helps them release the chemical message telling muscles to contract. Botox works by snipping this protein apart, which silences the treated muscle for months. That makes it the most famous molecular target in all of cosmetic medicine. Snap-8 was modeled on a piece of this same protein, in hopes of a much gentler version of the same trick.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M24 40C14 32 8 26 8 18a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 8-6 14-16 22z" fill="none" stroke="#ea5ea7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">SNARE complex</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The SNARE (soluble NSF-attachment protein receptor) complex is the protein machinery that lets nerve terminals release neurotransmitter onto muscles and other cells. When a nerve impulse arrives, SNARE proteins on the vesicle and on the cell membrane zip together, forcing the vesicle to fuse and spill its contents into the synaptic cleft. SNAP-25, syntaxin, and VAMP are its three main components. Disrupting this assembly — as Botox does by cutting SNAP-25 — stops the signal and prevents the muscle from contracting. It is one of the best-studied molecular machines in neurobiology.</p><div class="plain"><span class="plabel">Plain English</span>The SNARE complex is the tiny release mechanism at the end of every nerve, like a docking clamp that empties chemical messages into the gap toward the muscle. Its three key parts zip together whenever a nerve fires, letting the vesicle dump its contents. Botox sabotages this clamp by cutting one of the parts, so the muscle never gets the message. Snap-8's marketing claims it interferes with the same clamp from the outside, but that has not been convincingly shown.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M24 6l14 6v10c0 10-6 16-14 20C16 38 10 32 10 22V12z" fill="none" stroke="#0f5676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Botox</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Botulinum toxin type A, a purified neurotoxin used medically and cosmetically, FDA-approved in 2002 for frown lines after earlier approvals for eye-muscle disorders. It is injected directly into target muscles, where it enters nerve terminals and cleaves SNAP-25, blocking acetylcholine release for about three to four months. It is the most studied wrinkle treatment in existence, backed by decades of randomized trials. Because it is injected past the skin barrier, it reliably reaches its target — the central contrast with topical peptides like Snap-8. It is a prescription medicine, not a cosmetic ingredient.</p><div class="plain"><span class="plabel">Plain English</span>Botox is the original wrinkle treatment: a purified nerve toxin injected directly into the muscles that cause frown lines and crow's feet. Once inside the nerve ending, it snips SNAP-25 and quiets the muscle for about three to four months. Because a needle puts it exactly where it needs to go, it works reliably, and decades of clinical trials back it up. That direct delivery is the key difference from any cream, including Snap-8.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M10 24a14 14 0 0 1 24-9M38 24a14 14 0 0 1-24 9M30 10l4 5-5 4M18 38l-4-5 5-4" fill="none" stroke="#954870" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Expression lines</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Wrinkles formed by the repeated contraction of facial muscles over years: forehead lines from raising the brows, crow's feet from squinting, and frown lines from the glabella muscles between the brows. They begin as dynamic wrinkles, visible mainly during movement, and become permanently etched as skin loses elasticity with age. Both Botox and Snap-8 target these lines — one by silencing the muscle, the other by claiming to soften the same signal from the surface. They are distinct from static wrinkles caused mainly by sun damage and aging of the skin itself.</p><div class="plain"><span class="plabel">Plain English</span>Expression lines are the wrinkles your face carves into itself through repetition — forehead furrows from raised eyebrows, crow's feet from squinting, frown lines from concentrating. They start as movement lines and get permanently etched as skin thins with age. Both Botox and Snap-8 aim at the same lines: one by quieting the muscle, the other by claiming to soften the signal from the surface. They are different from sun-damage wrinkles, which come from the skin itself rather than the muscles.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M20 20a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM26 26l12 12" fill="none" stroke="#ea5ea7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Topical</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Applied to the surface of the skin, as with creams, serums, and gels — the only route Snap-8 has ever been marketed in. The skin's outer layer is an effective barrier designed to keep foreign molecules out, so most cosmetic ingredients penetrate poorly without special delivery systems. This is the central scientific doubt about Snap-8: its presumed target, the nerve terminal, sits well beneath intact skin. Botox bypasses the question entirely by being injected. For any topical product, what actually reaches the target determines everything about whether it can work.</p><div class="plain"><span class="plabel">Plain English</span>Topical means rubbed onto the skin, like a cream or serum — and that is the only way Snap-8 has ever been sold. Skin is built to keep things out, so most molecules in a cream never travel far below the surface. That is the big question hanging over Snap-8: its target is nerve endings, which live deep under intact skin. Botox skips the problem by going in with a needle. With any cream, the effect can only be as real as what actually reaches its target.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M6 18c4-6 8-6 12 0s8 6 12 0 8-6 12 0M6 30c4-6 8-6 12 0s8 6 12 0 8-6 12 0" fill="none" stroke="#0f5676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Wrinkle depth</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>A quantitative measurement of how deep a wrinkle is, usually taken with skin-topography imaging or silicone replicas in cosmetic studies. It is the metric behind the percentage claims in Snap-8 marketing, such as reported reductions in wrinkle depth after weeks of use. These measurements are objective but sensitive to study design: lighting, time of day, and skin moisturization can all shift the readings. Small, industry-funded trials with few participants make the numbers hard to trust. A measured reduction also does not reveal whether the effect came from muscle relaxation or from simple moisturizing.</p><div class="plain"><span class="plabel">Plain English</span>Wrinkle depth is simply how deep a wrinkle measures, usually with special skin-imaging cameras in cosmetic trials. It is the number behind every percentage claim you see in Snap-8 advertising. The trouble is that these measurements are easy to nudge — moisture, lighting, and tiny studies can all make the numbers look better than they are. And even a real reduction does not prove the muscle relaxed; plain moisturizer can plump wrinkles too.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M24 14a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM24 4v6M24 38v6M4 24h6M38 24h6" fill="none" stroke="#954870" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Acetylcholine</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The neurotransmitter that carries the "contract" message from motor nerves to skeletal muscles across the neuromuscular junction. When SNARE machinery releases it from the nerve terminal, it binds receptors on the muscle fiber and triggers contraction. Botox prevents this release by cutting SNAP-25; without acetylcholine in the cleft, the muscle stays relaxed. It is also used widely elsewhere in the body, including the brain and the parasympathetic nervous system. Every claim about relaxing expression lines is ultimately a claim about controlling acetylcholine release.</p><div class="plain"><span class="plabel">Plain English</span>Acetylcholine is the chemical "contract now" message that nerves deliver to muscles. When it lands on the muscle, the muscle fires; Botox stops this by cutting the release machinery, so the muscle stays quiet. It is used all over the body, from the brain to the gut. Any product promising to relax expression lines is promising, at bottom, to interfere with this one chemical message.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5eead422"/><path d="M10 10h12v12H10zM26 10h12v12H26zM10 26h12v12H10zM26 26h12v12H26z" fill="none" stroke="#ea5ea7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Muscle contraction</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The shortening of muscle fibers triggered when a nerve signal arrives and acetylcholine crosses the neuromuscular junction. In the face, the muscles of expression — around the eyes, brow, and mouth — contract thousands of times a day, folding the overlying skin along the same creases. Over decades, these repeated micro-contractions, combined with thinning skin, etch permanent lines. Relaxing the specific muscles that cause the creases is the mechanism of Botox, and the proposed mechanism of Snap-8. Without contraction, there is no dynamic wrinkle.</p><div class="plain"><span class="plabel">Plain English</span>Muscle contraction is the muscle fiber shortening after the nerve's chemical message arrives. Your facial muscles do this thousands of times a day, folding the skin along the same creases every time you squint or frown. Over decades, those folds get etched in as permanent lines, helped along by thinning skin. Relaxing the exact muscles that make the creases is how Botox works — and what Snap-8 claims to do from the surface.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#0f766e22"/><path d="M10 14h28v20H10zM10 14l14 10 14-10" fill="none" stroke="#0f5676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">In-vitro</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Latin for "in glass": experiments performed in test tubes, petri dishes, or cell cultures rather than in living organisms. Much of the supportive data for Snap-8's proposed mechanism comes from in-vitro work on nerve-like cell models, where the peptide can be applied directly to its target with no skin barrier in the way. Such experiments can show that a molecule is capable of an effect, but not that it reaches its target or works in real human skin. Cosmetic marketing often leans on in-vitro findings without making that limitation clear. Human evidence is a higher and separate bar.</p><div class="plain"><span class="plabel">Plain English</span>In-vitro means "in glass" — experiments done in dishes or test tubes instead of living bodies. A lot of Snap-8's backing comes from this kind of lab work, where the peptide can be dropped straight onto cells with no skin barrier in between. That can show what a molecule is capable of, but not that it ever reaches its target on a real face. Cosmetic ads love quoting dish results while skipping that caveat. What happens in a dish and what happens on skin are two different questions.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#48959222"/><path d="M10 8h16a6 6 0 0 1 6 6v22H16a6 6 0 0 1-6-6zM16 8v28" fill="none" stroke="#954870" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An inactive treatment given to a control group in trials, or the improvement that comes from expectation alone. Placebo responses are especially strong for subjective cosmetic outcomes — people reliably rate wrinkles as better when they believe they are using something effective. This makes controlled trials essential for any wrinkle cream: without a placebo comparison, any improvement could come from hope, moisturization, or lighting rather than the active ingredient. It is the reason anecdotes about Snap-8 cannot substitute for data. The placebo effect is real and powerful, which is exactly why it must be ruled out.</p><div class="plain"><span class="plabel">Plain English</span>A placebo is a dummy treatment — or the improvement people feel just from believing something works. It is especially powerful for cosmetic products: people honestly see their wrinkles as better when they expect improvement. That is why a wrinkle cream needs a fair head-to-head test against a lookalike cream with no active ingredient. Without that, glowing reviews could come from hope, moisture, or flattering light instead of the peptide. The placebo effect is real, which is precisely why it has to be ruled out before any claim is trusted.</div></div></div>
   </div></section>
-<!-- ============ CHAPTER 9 ============ -->
-<section class="chapter" id="ch9">
-  <span class="eyebrow"><span class="n">09</span>Takeaways</span>
+<mini-poll slug="snap8-mini-ch10"
+  data-question="Twelve terms — which one will you actually remember?"
+  data-answers='[["🧬", "SNAP-25"], ["⚡", "SNARE complex"], ["💬", "Acetylcholine"], ["🫙", "Botox in a jar"]]'>
+
+</mini-poll>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Nine chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
 
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧬</div><h4>Eight amino acids, one famous target</h4><p>Snap-8 is <strong>acetyl octapeptide-3</strong>, modeled on SNAP-25 — the protein Botox disables. Same wiring, whisper vs. switch.</p></div>
@@ -760,7 +992,8 @@ mini-poll { display: block; }
       <li><strong>No medical advice.</strong> Nothing here is a recommendation for or against any treatment. Talk to a licensed clinician or dermatologist about any health decision.</li>
     </ul>
   </div></section>
-<mini-poll slug="snap8-mini-ch8"
+<h3 class="ratehead">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="snap8-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It&#39;s okay"]]'>
 </mini-poll>
@@ -805,7 +1038,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#5eead4","#0f766e","#489592","#0f766e","#5eead4","#042f2e"];
+  var colors=["#ea5ea7","#0f5676","#954870","#0f5676","#ea5ea7","#04222f"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -907,12 +1140,14 @@ document.querySelectorAll('.toc a[href^="#"], nav.chapters a[href^="#"]').forEac
     if(history.replaceState&&id.length>1){try{history.replaceState(null,"",id);}catch(err){}}
   });
 });
+/* ---------- pause SMIL under reduced motion ---------- */
+if(reduced){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}
 /* ---------- progress + scrollspy ---------- */
 var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -955,7 +1190,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#5eead4","#0f766e","#489592","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#ea5ea7","#0f5676","#954870","#26b8f9","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -991,12 +1226,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#5eead4", "#0f766e", "#0f766e", "#0f766e", "#489592", "#5eead4", "#fbbf24", "#0f766e", "#489592"] };
+  accents: ["#ea5ea7", "#0f5676", "#0f5676", "#0f5676", "#954870", "#ea5ea7", "#26b8f9", "#0f5676", "#954870"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="snap8-mini-ch1"
+     <mini-poll slug="snap8-mini-recap"
        data-question="Had you heard of Snap-8 before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1075,8 +1310,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#5eead4', '#0f766e', '#489592', '#a78bfa', '#489592',
-                 '#0f766e', '#fbbf24', '#fb7185', '#0796b7'];
+                ['#ea5ea7', '#0f5676', '#954870', '#a78bfa', '#954870',
+                 '#0f5676', '#26b8f9', '#fb71b9', '#0781b7'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
